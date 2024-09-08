@@ -1,0 +1,145 @@
+$date
+	Mon Oct 16 16:50:05 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module ALU_Testbench $end
+$var wire 1 ! zeroFlag $end
+$var wire 32 " result [31:0] $end
+$var wire 1 # carryFlag $end
+$var reg 4 $ aluOp [3:0] $end
+$var reg 1 % enable $end
+$var reg 32 & operandA [31:0] $end
+$var reg 32 ' operandB [31:0] $end
+$var reg 1 ( shiftAmount $end
+$scope module UUT $end
+$var wire 4 ) aluOp [3:0] $end
+$var wire 1 % enable $end
+$var wire 32 * operandA [31:0] $end
+$var wire 32 + operandB [31:0] $end
+$var wire 1 ( shiftAmount $end
+$var wire 1 ! zeroFlag $end
+$var wire 32 , res [31:0] $end
+$var wire 1 # carryFlag $end
+$var parameter 4 - ADD_OP $end
+$var parameter 4 . AND_OP $end
+$var parameter 4 / NOT_OP $end
+$var parameter 4 0 OR_OP $end
+$var parameter 4 1 SLA_OP $end
+$var parameter 4 2 SRA_OP $end
+$var parameter 4 3 SRL_OP $end
+$var parameter 4 4 SUB_OP $end
+$var parameter 4 5 XOR_OP $end
+$var reg 32 6 result [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b100 5
+b1 4
+b1000 3
+b111 2
+b110 1
+b11 0
+b101 /
+b10 .
+b0 -
+$end
+#0
+$dumpvars
+b101000 6
+bz ,
+b1010 +
+b11110 *
+b0 )
+0(
+b1010 '
+b11110 &
+0%
+b0 $
+0#
+bz "
+0!
+$end
+#10
+b101000 "
+b101000 ,
+1%
+#20
+b10100 "
+b10100 ,
+b10100 6
+b1 $
+b1 )
+#30
+b10 "
+b10 ,
+b10 6
+b10 $
+b10 )
+b11 '
+b11 +
+b1110 &
+b1110 *
+#40
+b1111 "
+b1111 ,
+b1111 6
+b11 $
+b11 )
+#50
+b1101 "
+b1101 ,
+b1101 6
+b100 $
+b100 )
+#60
+b1111 "
+b1111 ,
+b1111 6
+b101 $
+b101 )
+b11111111111111111111111111110000 &
+b11111111111111111111111111110000 *
+#70
+b1110 "
+b1110 ,
+b1110 6
+1(
+b110 $
+b110 )
+b111 &
+b111 *
+#80
+b11111111111111111111111111111111 "
+b11111111111111111111111111111111 ,
+b11111111111111111111111111111111 6
+b111 $
+b111 )
+b11111111111111111111111111111110 &
+b11111111111111111111111111111110 *
+#90
+b111 "
+b111 ,
+b111 6
+b1000 $
+b1000 )
+b1110 &
+b1110 *
+#100
+b1100100 "
+b1100100 ,
+b1100100 6
+0(
+b0 $
+b0 )
+b1000110 '
+b1000110 +
+b11110 &
+b11110 *
+#200
